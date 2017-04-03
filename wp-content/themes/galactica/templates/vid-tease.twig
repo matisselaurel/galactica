@@ -1,0 +1,11 @@
+<div class="column">
+	<article class="tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
+		{% block content %}
+			<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
+			<a target="_blank" href="https://www.youtube.com/watch?v={{post.youtube_id}}">
+	                    <img src="https://img.youtube.com/vi/{{post.youtube_id}}/0.jpg" alt="">
+	        </a>
+			
+		{% endblock %}
+	</article>	
+</div>

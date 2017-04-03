@@ -1,0 +1,7 @@
+{
+    "require": {
+        "timber/timber": "^1.2",
+        "zurb/foundation": "^6.3",
+        "components/jquery": "^3.2"
+    }
+}

@@ -1,0 +1,29 @@
+{% extends "base.twig" %}
+
+
+
+{% block content %}
+
+
+<div class="row small-up-1 medium-up-2 large-up-3">
+	{% for post in posts %}
+			{% include ['vid-tease.twig'] %}
+	{% endfor %}
+</div>
+	{# <div class="content-wrapper">
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
+				
+				<a target="_blank" href="https://www.youtube.com/watch?v={{post.youtube_id}}">
+                    <img src="https://img.youtube.com/vi/{{post.youtube_id}}/0.jpg" alt="">
+                </a>
+                <p class="blog-author">
+					<span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a><span>&bull;</span> {{ post.post_date|date}}
+				</p>
+				<div class="article-body">
+					{{post.content}}
+				</div>
+			</section>
+		</article>
+	</div> #}<!-- /content-wrapper -->
+{% endblock %}
